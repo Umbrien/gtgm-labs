@@ -4,35 +4,35 @@ body {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-header {
+nav {
     background-color: rgb(247, 202, 88);
     box-shadow: 0px 5px 5px -5px rgba(34, 60, 80, 0.6);
     padding: 10px;
 }
 
-#header-logo-a {
+#nav-logo-a {
     text-decoration: none;
 }
 
-#header-logo {
+#nav-logo {
     margin: 0;
     font-size: 40px;
     display: inline-block;
 }
 
-header nav {
+nav div {
     display: inline-block;
     margin: 0 50px;
     font-size: 20px;
 }
 
-header nav a {
+nav div a {
     text-decoration: none;
     color: black;
     transition-duration: 0.1s;
 }
 
-header nav a:hover {
+nav div a:hover {
     color: gray;
     transition-duration: 0.1s;
 }
