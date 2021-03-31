@@ -1,0 +1,20 @@
+.card {
+    background: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+    box-shadow: 0 0 21px 11px rgba(34, 60, 80, 0.2);
+    border-radius: 10px;
+    margin: 100px 20px;
+    padding: 20px 50px;
+    display: flex;
+}
+
+.card img {
+    border: 4px double #af2e2e;
+}
+
+.w-40 {
+    flex: auto;
+}
+
+.w-60 {
+    flex: 60%;
+}
