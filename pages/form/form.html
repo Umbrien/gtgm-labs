@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Форма | Курочки 🐓</title>
+
+    <link rel="stylesheet" href="../../styles/main.css">
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="../../index.html" id="nav-logo-a">🐓</a></li>
+            <li><a href="pages/breeds/breeds.html">Породы</a></li>
+            <li><a href="#">Корм</a></li>
+            <li><a href="#">Другое 🔽</a>
+                <ul>
+                    <li><a href="#">Форма для заполнения</a></li>
+                    <li><a href="#">Two</a></li>
+                    <li><a href="#">Three</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+        <header>
+            <h1>Заполните форму и получите в подарок 🎁</h1>
+        </header>
+        <section>
+            <form>
+                <div class="form-entry">
+                    <h3>Дата рождения 🎂</h3>
+                    <input type="datetime-local" name="birthdate">
+                </div>
+                <div class="form-entry">
+                    <h3>Голубиная почта 🐦</h3>
+                    <input type="email" name="email" placeholder="pidgin@example.com">
+                </div>
+                <div class="form-entry">
+                    <h3>Номер телефона ☎️</h3>
+                    <input type="tel" name="phone" placeholder="380-12-345-6789" pattern="380-[0-9]{2}-[0-9]{3}-[0-9]{4}" value="380-">
+                    <small>Format: 380-12-345-6789</small>
+                </div>
+                <div class="form-entry">
+                    <h3>URL 🕸</h3>
+                    <input type="url" name="url" placeholder="https://example.com" value="https://www.vim.org">
+                </div>
+                <button>Отправить</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>&copy; 2021 at <a href="https://nure.ua">NURE</a></footer>
+</body>
+</html>
