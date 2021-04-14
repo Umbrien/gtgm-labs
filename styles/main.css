@@ -1,6 +1,74 @@
-@import "nav.css";
-@import "card.css";
+/* nav */
+nav {
+    background-color: rgb(247, 202, 88);
+    box-shadow: 0 5px 5px -5px rgba(34, 60, 80, 0.6);
+}
 
+nav ul {
+    list-style: none;
+    background: rgb(247, 202, 88);
+    height: 50px;
+}
+
+nav ul ul {
+    padding-left: 0;
+    margin-top:25px;
+}
+
+nav a {
+    text-decoration: none;
+    background: rgb(247, 202, 88);
+    color: #000000;
+    padding:0 15px;
+    line-height:50px;
+    display: block;
+}
+nav a:hover { background: #FFE9B6; }
+
+nav li {
+    float:left;
+    position:relative;
+}
+
+/* Styles for drop-down menu */
+nav li > ul {
+    position:absolute;
+    top:25px;
+    display:none;
+}
+
+nav li:hover > ul {
+    display:block;
+    width:250px;
+}
+
+nav li:hover > ul > li {
+    float:none;
+}
+
+/* Card */
+.card {
+    background: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+    box-shadow: 0 0 21px 11px rgba(34, 60, 80, 0.2);
+    border-radius: 10px;
+    margin: 100px 20px;
+    padding: 20px 50px;
+    display: flex;
+}
+
+.card img {
+    border: 4px double #af2e2e;
+}
+
+.w-40 {
+    flex: auto;
+}
+
+.w-60 {
+    flex: 60%;
+}
+
+/* main */
 body {
     background-color: #ffe4c4;
     margin: 0;
@@ -14,4 +82,58 @@ main {
 footer {
     text-align: center;
     margin-bottom: 50px;
+}
+
+/*
+ * Single page related styles
+*/
+
+/* breeds */
+    /* characteristics */
+    .characteristics {
+        background: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
+        box-shadow: 0 0 21px 11px rgba(34, 60, 80, 0.2);
+        border-radius: 10px;
+        padding: 10px 25px;
+    }
+
+    .characteristics > ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .characteristics > ul > li {
+        padding-left: 1rem;
+        text-indent: -0.7rem;
+    }
+
+    .characteristics > ul > li:nth-child(3n+1)::before {
+         content: "👷‍♂️ Тип продуктивности: ";
+        font-weight: bold;
+    }
+
+    .characteristics > ul >li:nth-child(3n+2)::before {
+        content: "🏋️‍♂️ Вес петуха: ";
+        font-weight: bold;
+    }
+
+    .characteristics > ul >li:nth-child(3n+3)::before {
+        content: "🏋️ Вес курицы: ";
+        font-weight: bold;
+    }
+
+    .characteristics > ul >li:nth-child(3n+4)::before {
+        content: "🥚 Яйценоскость: ";
+        font-weight: bold;
+    }
+
+    .characteristics > ul >li:nth-child(3n+5)::before {
+        content: "🔩 Особенности: ";
+        font-weight: bold;
+    }
+
+/* form */
+.form-entry > h3, .form-entry > input {
+    display: inline-block;
 }
