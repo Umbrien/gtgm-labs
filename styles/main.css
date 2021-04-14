@@ -85,6 +85,19 @@ footer {
     display: grid;
     grid-row-gap: 50px;
 }
+
+.fixed-def-img {
+    position: fixed; bottom: 10px; right: 5px;
+    height: 80px;
+    opacity: 0.5;
+    transition-duration: .5s;
+}
+
+.fixed-def-img:hover {
+    height: 180px;
+    opacity: 1;
+    transition-duration: .5s;
+}
     /* characteristics */
     .breeds-card__characteristics {
         background: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
