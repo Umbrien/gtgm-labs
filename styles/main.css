@@ -54,6 +54,7 @@ nav li:hover > ul > li {
     padding: 20px 50px;
     display: grid;
     grid-template-columns: 1fr 5fr;
+    grid-column-gap: 25px;
 }
 
 .breeds-card img {
@@ -161,4 +162,59 @@ footer {
 #planet-progress::-webkit-progress-value {
   background-color: mediumseagreen;
   border-radius: 50px;
+}
+
+/* checkboxes */
+.order-details-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 25px;
+    justify-items: center;
+}
+
+.order-details-section label {
+    font-size: 20px;
+    font-family: Arial, serif;
+}
+
+.order-checkbox {
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+	margin: 10px 0 0 20px;
+}
+.order-checkbox + label {
+	position: relative;
+	padding-left: 60px;
+	cursor: pointer;
+}
+.order-checkbox + label:before {
+	content: '';
+	position: absolute;
+	top: -4px;
+	left: 0;
+	width: 50px;
+	height: 26px;
+	border-radius: 13px;
+	background: #CDD1DA;
+	box-shadow: inset 0 2px 3px rgba(0,0,0,.2);
+	transition: .2s;
+}
+.order-checkbox + label:after {
+	content: '';
+	position: absolute;
+	top: -2px;
+	left: 2px;
+	width: 22px;
+	height: 22px;
+	border-radius: 10px;
+	background: #FFF;
+	box-shadow: 0 2px 5px rgba(0,0,0,.3);
+	transition: .2s;
+}
+.order-checkbox:checked + label:before {
+	background: #9FD468;
+}
+.order-checkbox:checked + label:after {
+	left: 26px;
 }

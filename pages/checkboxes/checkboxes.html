@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Выбор | Курочки 🐓</title>
+    <link rel="stylesheet" href="../../styles/main.css">
+</head>
+<body>
+  <nav>
+        <ul>
+            <li><a href="../../index.html" id="nav-logo-a">🐓</a></li>
+            <li><a href="../breeds/breeds.html">Породы</a></li>
+            <li><a href="#">Корм</a></li>
+            <li><a href="#">Другое 🔽</a>
+                <ul>
+                    <li><a href="../form/form.html">Форма для заполнения</a></li>
+                    <li><a href="../progress/progress.html">Прогресс</a></li>
+                    <li><a href="#">Checkboxes</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+  <main>
+    <header>
+      <h1>Выберите как сделать заказ</h1>
+    </header>
+
+    <section class="order-details-section">
+      <div>
+        <input class="order-checkbox" type="checkbox" id="good">
+          <label class="container" for="good">Хорошо</label>
+      </div>
+      <div>
+        <input class="order-checkbox" type="checkbox" id="cheap">
+          <label for="cheap">Дешево</label>
+      </div>
+      <div>
+        <input class="order-checkbox" type="checkbox" id="fast">
+          <label for="fast">Быстро</label>
+      </div>
+    </section>
+  </main>
+
+  <script src="checkboxes.js"></script>
+</body>
+</html>
