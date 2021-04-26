@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Размер</title>
+</head>
+<body>
+    <div>
+        <input id="textInput" placeholder="Text" type="text">
+        <input id="fontSizeInput" placeholder="Font size, px" type="number">
+    </div>
+    <div>
+        <p id="string"></p>
+    </div>
+
+    <script>
+        /**
+         * Updates string with different font size
+         *
+         * @param {string} text - Text for the string
+         * @param {number} fontSize - Font size in px for the string
+         */
+        function updateString(text, fontSize) {
+            let p = document.getElementById("string");
+            p.style.fontSize = fontSize.toString() + "px";
+            p.innerText = text;
+        }
+
+        /**
+         * If inputs are valid, calls updateString()
+         */
+        function tryToUpdateString() {
+            let textInputValue = document.getElementById("textInput").value;
+            let fontSizeInputValue = document.getElementById("fontSizeInput").value;
+
+            if(textInputValue != null && fontSizeInputValue != null) {
+                updateString(textInputValue, fontSizeInputValue);
+            }
+        }
+
+        document.getElementById("textInput").oninput = tryToUpdateString;
+        document.getElementById("fontSizeInput").oninput = tryToUpdateString;
+    </script>
+</body>
+</html>
