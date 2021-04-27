@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>cookie</title>
+  <style>
+    .tc {
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+<div class="tc">
+  <button id="plus">A+</button>
+  <button id="minus">A-</button>
+  <span id="font-size-span">14</span>
+</div>
+<div id="text-div">
+  <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi doloribus earum esse, expedita inventore
+    non quia rem ut veniam. A blanditiis deserunt est, illum maiores repellat saepe ut voluptatem.
+  </div>
+  <div>Aliquid atque consequuntur culpa dicta exercitationem quos, repellat. A aut corporis ipsam perferendis quos
+    reprehenderit sint, voluptas! Accusantium alias aliquid consectetur eaque esse explicabo fugit hic perferendis quae
+    qui, recusandae.
+  </div>
+  <div>Amet cum debitis deserunt illo illum ipsa molestias obcaecati quasi quis, soluta, sunt tempora ullam veniam?
+    Accusamus architecto aspernatur corporis cumque facilis labore maiores perspiciatis porro rerum vero? Aperiam,
+    dolore.
+  </div>
+  <div>Ab at consequuntur cupiditate dolorem iusto, nostrum, odit perspiciatis quas quia reiciendis saepe suscipit vitae
+    voluptatem. Corporis odit provident sit? Aliquam assumenda aut, distinctio inventore laboriosam officiis quo vel
+    vitae?
+  </div>
+  <div>Aperiam architecto, consequuntur cum expedita itaque laudantium non odio placeat quisquam vero. Eveniet
+    molestias, optio. Alias delectus distinctio explicabo inventore magni quidem voluptatum. Autem doloribus facilis
+    impedit mollitia sapiente sit!
+  </div>
+  <div>A aliquid aut consectetur cupiditate debitis distinctio dolore doloribus eos eum excepturi fugiat, fugit in
+    molestias officiis placeat quidem quis reiciendis, repellat repellendus suscipit totam ullam unde voluptate
+    voluptatem voluptates.
+  </div>
+  <div>Aperiam asperiores at commodi, in labore mollitia nisi, omnis provident quae quidem repellendus sint
+    voluptatibus? Alias, animi deleniti eaque iure magnam optio placeat quas sint tempora voluptatibus. Exercitationem,
+    omnis perspiciatis?
+  </div>
+  <div>Aliquid, culpa et minima porro sed similique tempora? Deleniti doloremque, doloribus dolorum enim expedita, fuga
+    in inventore ipsa iusto provident totam, vel vero voluptatibus. Blanditiis eum obcaecati provident recusandae
+    tempore!
+  </div>
+  <div>A aut dolorem enim ex, magnam modi natus nesciunt numquam, quibusdam quos rem reprehenderit soluta ut?
+    Consequuntur corporis dignissimos in nesciunt optio provident quaerat quia quidem reiciendis sequi. Reprehenderit,
+    saepe!
+  </div>
+  <div>Ad amet asperiores deleniti dolor eius enim excepturi explicabo in ipsa itaque laudantium minima officiis
+    pariatur quam quod quos recusandae reiciendis, reprehenderit sequi similique temporibus ullam unde velit! Ducimus,
+    quaerat!
+  </div>
+  <div>Accusantium asperiores cupiditate fuga incidunt iste laudantium, maiores mollitia odio officia qui quis sed vitae
+    voluptatem. Accusamus aliquam cumque ducimus eaque, illum impedit maxime nam neque quisquam quod totam ullam.
+  </div>
+  <div>Delectus dicta doloribus earum eius excepturi hic illo mollitia pariatur porro provident quaerat quibusdam
+    quisquam ratione, sapiente tempore unde vel veniam voluptate! Accusamus excepturi ipsam iusto nam perferendis
+    possimus recusandae.
+  </div>
+  <div>Dignissimos iste quia sequi. A architecto aspernatur commodi earum, eos exercitationem fuga, harum hic, illum
+    iure maiores mollitia necessitatibus non omnis possimus praesentium quisquam reiciendis reprehenderit saepe tenetur
+    totam voluptatibus.
+  </div>
+  <div>Animi debitis eos impedit tenetur. Consequatur culpa cum cupiditate, debitis eligendi et fugit illo ipsam, ipsum,
+    neque nulla optio quod repudiandae saepe sed tenetur vitae. Enim facere itaque officiis quae.
+  </div>
+  <div>Architecto asperiores ducimus ea eligendi error ex facere incidunt ipsam maxime modi odit, provident quis quod
+    veritatis vitae. Aperiam blanditiis consectetur culpa harum in nam quod ratione rerum sint ut.
+  </div>
+  <div>A aliquid assumenda blanditiis, consequuntur excepturi, harum, hic mollitia nihil nisi quasi sunt tempore tenetur
+    vero? Cumque est et, facere ipsam numquam, odit reiciendis repudiandae soluta tenetur unde vitae voluptates?
+  </div>
+  <div>Atque autem consequatur iure mollitia, nulla officiis recusandae! Aperiam aspernatur deserunt dolorem dolorum
+    eligendi fugit harum, iure, laboriosam libero maxime modi numquam obcaecati porro provident quos rem sit veniam,
+    vero!
+  </div>
+  <div>Accusamus aliquam aliquid assumenda cumque debitis eaque eos eum fugit hic incidunt ipsa libero magnam mollitia
+    nemo officiis omnis placeat quas quia quod ratione recusandae reprehenderit, sunt temporibus voluptate voluptates!
+  </div>
+  <div>Ad aliquid at atque cum, deserunt dolorem dolores error explicabo facilis incidunt laborum libero magnam maiores
+    nisi non pariatur perferendis praesentium quaerat quas quidem rem repellendus reprehenderit temporibus vitae
+    voluptates.
+  </div>
+  <div>Ad amet at blanditiis consectetur, ducimus est illum ipsam iure modi officia placeat quas, quia, quisquam
+    repellendus saepe sint vero voluptatem! Ea eius ex fugiat necessitatibus odit, reprehenderit ullam vero.
+  </div>
+</div>
+
+<script>
+  document.getElementById('plus').onclick = increaseFontSize;
+  document.getElementById('minus').onclick = decreaseFontSize;
+
+  let fontSize = 14;
+
+  // if cookie exists
+  if (document.cookie.split(';').filter((item) => item.trim().startsWith('fontSize=')).length) {
+    fontSize = parseInt(document.cookie.replace(/(?:(?:^|.*;\s*)fontSize\s*\=\s*([^;]*).*$)|^.*$/, "$1"));
+  }
+
+  updateFontSize(fontSize);
+
+  function updateFontSize(size) {
+    fontSize = size;
+    document.getElementById("text-div").style.fontSize = `${size}px`;
+    document.getElementById('font-size-span').innerText = size.toString();
+    document.cookie = `fontSize=${size}`;
+  }
+
+  function increaseFontSize() {
+    updateFontSize(fontSize + 1);
+  }
+
+  function decreaseFontSize() {
+    updateFontSize(fontSize - 1);
+  }
+</script>
+</body>
+</html>
