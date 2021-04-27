@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pointer</title>
+  <style>
+    html, body {
+      margin: 0;
+      height: 100%;
+    }
+  </style>
+</head>
+<body>
+  <p id="mouse-coordinates"></p>
+  <br>
+  <p id="pressed-key-code"></p>
+
+  <script>
+    let mc = document.getElementById('mouse-coordinates');
+    let kc = document.getElementById('pressed-key-code');
+
+    document.body.onmousemove = () => {
+      let x = window.event.clientX;
+      let y = window.event.clientY;
+
+      mc.innerText = `x: ${x}, y: ${y}`;
+    };
+
+    document.body.onkeypress = () => {
+      let key = window.event.which;
+
+      kc.innerText = `key code: ${key}`;
+    };
+  </script>
+</body>
+</html>
