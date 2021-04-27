@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>RGB</title>
+  <style>
+    main {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+    .rgb-checker {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-column-gap: 20px;
+    }
+    #rgb-block {
+      width: 100px;
+      height: 100px;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="rgb-checker">
+      <input id="red-input" type="range" min="0" max="255" value="0"> <label for="red-input">Red</label>
+      <input id="green-input" type="range" min="0" max="255" value="0"> <label for="green-input">Green</label>
+      <input id="blue-input" type="range" min="0" max="255" value="0"> <label for="blue-input">Blue</label>
+    </div>
+    <div id="rgb-block"></div>
+
+    <script>
+      let block = document.getElementById('rgb-block');
+
+      let redInput = document.getElementById('red-input');
+      let greenInput = document.getElementById('green-input');
+      let blueInput = document.getElementById('blue-input');
+
+      redInput.onchange = updateBlockColor;
+      greenInput.onchange = updateBlockColor;
+      blueInput.onchange = updateBlockColor;
+
+      function updateBlockColor() {
+        let red = redInput.value;
+        let green = greenInput.value;
+        let blue = blueInput.value;
+
+        block.style.backgroundColor = `rgb(${red}, ${green}, ${blue})`;
+      }
+
+      updateBlockColor();
+    </script>
+  </main>
+</body>
+</html>
