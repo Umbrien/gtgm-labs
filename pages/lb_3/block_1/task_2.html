@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>IMG</title>
+</head>
+<style>
+    #img {
+        position: absolute;
+        width: 100px;
+    }
+</style>
+<body>
+<img id="img" src="../../breeds/img/dominic.jpg" alt="dominic">
+
+<script>
+    function getRandomInt(max) {
+        return Math.floor(Math.random() * max);
+    }
+
+    let windowHeight = window.innerHeight;
+    let windowWidth = window.innerWidth;
+
+    let img = document.getElementById('img');
+
+    // Calculate image.height when DOM is ready, otherwise it is 0
+    document.addEventListener('DOMContentLoaded', () => {
+        maxHeight = windowHeight - img.height;
+        maxWidth = windowWidth - img.width;
+    });
+
+    setInterval(() => {
+        let randomHeight = getRandomInt(maxHeight);
+        let randomWidth = getRandomInt(maxWidth);
+
+        img.style.top = `${randomHeight}px`;
+        img.style.left = `${randomWidth}px`;
+    }, 1000);
+</script>
+</body>
+</html>
