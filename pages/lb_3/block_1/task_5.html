@@ -12,13 +12,20 @@
 <script>
   let img = document.getElementById('img');
   let opacity = 1;
+  let intervalID;
 
-  setInterval(() => {
-    if (opacity > 0) {
-      opacity -= 0.01;
-      img.style.opacity = opacity;
-    }
-  }, 100);
+  function updateOpacity() {
+      if (opacity > 0) {
+        opacity -= 0.01;
+        img.style.opacity = opacity;
+      } else {
+          clearInterval(intervalID);
+      }
+  }
+
+  document.addEventListener('DOMContentLoaded', () => {
+      intervalID = setInterval(updateOpacity, 100);
+  });
 
 </script>
 </body>
