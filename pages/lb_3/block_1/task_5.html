@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Disappearing</title>
+</head>
+<body>
+<img src="../../breeds/img/appenzeller.jpg" alt="app">
+<img id="img" src="../../breeds/img/dominic.jpg" alt="dom">
+<img src="../../breeds/img/welzumer.jpg" alt="wel">
+
+<script>
+  let img = document.getElementById('img');
+  let opacity = 1;
+
+  setInterval(() => {
+    if (opacity !== 0) {
+      opacity -= 0.01;
+      img.style.opacity = opacity;
+    }
+  }, 100)
+
+</script>
+</body>
+</html>
