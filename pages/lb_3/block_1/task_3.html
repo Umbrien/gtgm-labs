@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Paragraphs</title>
+</head>
+<body>
+<p>Это P</p>
+<p>И это P</p>
+<h1>Это H1</h1>
+<p>А это P</p>
+<h2>А это H2</h2>
+<p>PPPPPPPPPPPP</p>
+<h3>H3</h3>
+
+<script>
+  setTimeout(() => {
+    let ps = document.getElementsByTagName('p');
+
+    for (let p of ps) {
+      p.setAttribute('style', 'font-size: 45px;');
+    }
+  }, 1000);
+</script>
+</body>
+</html>
