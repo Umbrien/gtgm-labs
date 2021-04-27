@@ -14,11 +14,11 @@
   let opacity = 1;
 
   setInterval(() => {
-    if (opacity !== 0) {
+    if (opacity > 0) {
       opacity -= 0.01;
       img.style.opacity = opacity;
     }
-  }, 100)
+  }, 100);
 
 </script>
 </body>
