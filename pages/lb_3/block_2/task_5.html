@@ -104,6 +104,10 @@
 
   updateFontSize(fontSize);
 
+  /**
+   * Updates variables, DOM text and cookies related to the font size
+   * @param size {number}
+   */
   function updateFontSize(size) {
     fontSize = size;
     document.getElementById("text-div").style.fontSize = `${size}px`;
