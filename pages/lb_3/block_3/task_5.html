@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Referrer version</title>
+</head>
+<body>
+<p id="referrer"></p>
+<p id="os"></p>
+<p id="version"></p>
+
+<script>
+  let referrer = document.referrer;
+  let os = navigator.platform;
+  let version = navigator.appVersion;
+
+  document.getElementById('referrer').innerText = `You came from ${referrer}`;
+  document.getElementById('os').innerText = `Your OS is ${os}`;
+  document.getElementById('version').innerText = `Your browser version is ${version}`;
+</script>
+</body>
+</html>
