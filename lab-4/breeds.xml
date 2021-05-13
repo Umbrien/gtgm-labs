@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<breeds>
+    <breed>
+        <name>Австралорп</name>
+        <description>Родоначальники мясо-яичного направления. Обычная внешность компенсируется прекрасной яйценоскостью (от 270 шт. в год) и весом тушки свыше 4 кг.</description>
+        <characteristics>
+            <category>мясо-яичные</category>
+            <cock-weight unit="kg">4</cock-weight>
+            <hen-weight unit="kg">3</hen-weight>
+            <productivity>очень высокая (более 250) шт. в год</productivity>
+            <features>Неприхотливые к условиям</features>
+        </characteristics>
+    </breed>
+    <breed>
+        <name>Аппенцеллер Шпицхаубен</name>
+        <description>Представители породы отлично чувствуют себя в холодную погоду, поскольку были выведены в Швейцарии. Для содержания обязателен большой выгул.слуш</description>
+        <characteristics>
+            <category>яичные, декоративные и бойцовые</category>
+            <cock-weight unit="kg">2</cock-weight>
+            <hen-weight unit="kg">1,5</hen-weight>
+            <productivity>низкая (до 150) шт. в год.</productivity>
+            <features>Вкусное яйцо, Для Северных регионов</features>
+        </characteristics>
+    </breed>
+    <breed>
+        <name>Вельзумер</name>
+        <description>Набирающая популярность в России порода. В первую очередь интересна как несушка с яйцами темного в крапинку окраса. Цыплята очень жизнестойкие, выживаемость высокая.</description>
+        <characteristics>
+            <category>мясо-яичные, карликовые (бентамки)</category>
+            <cock-weight unit="kg">3</cock-weight>
+            <hen-weight unit="kg">3</hen-weight>
+            <productivity>средняя (150-200) шт. в год</productivity>
+            <features>Неприхотливые к условиям, Есть карликовая версия</features>
+        </characteristics>
+    </breed>
+    <breed>
+        <name>Доминик</name>
+        <description>Абсолютная диковина для нашей страны, даже на исторической родине популяция исчисляется несколькими сотнями. Уникальна «неубиваемостью»: отлично живет в жаре и холоде, уверенно добывает пищу самостоятельно.</description>
+        <characteristics>
+            <category>мясо-яичные</category>
+            <cock-weight unit="kg">2</cock-weight>
+            <hen-weight unit="kg">2</hen-weight>
+            <productivity>низкая (до 150) шт. в год</productivity>
+            <features>Неприхотливые к условиям, Для Северных регионов, Для Южных регионов</features>
+        </characteristics>
+    </breed>
+    <breed>
+        <name>Транспарито 0.3</name>
+        <description>Последняя разработка Алабамских ученых. Наполовину прозрачная курица!</description>
+        <characteristics>
+            <category>декоративные и военные</category>
+            <cock-weight unit="kg">1</cock-weight>
+            <hen-weight unit="kg">0,75</hen-weight>
+            <productivity>низкая (до 75) шт. в год.</productivity>
+            <features>Не оставляет следов на снегу, полупрозрачное яйцо</features>
+        </characteristics>
+    </breed>
+</breeds>
